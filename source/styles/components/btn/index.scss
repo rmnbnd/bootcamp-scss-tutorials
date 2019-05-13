@@ -1,3 +1,5 @@
+@import 'size';
+
 .btn {
     background-color: $color-1;
     color: $color-2;
@@ -5,25 +7,21 @@
     text-transform: uppercase;
     font-family: 'Lato';
     font-weight: 900;
-    font-size: 14px;
-    padding: 11px 37px 10.8px 37.1px;
+    @include size(14px, 11px, 37px, 10.8px, 37.1px);
     letter-spacing: 0.1px;
     border: none;
     cursor: pointer;
 
     &.medium {
-        font-size: 18px;
-        padding: 14px 46px;
+        @include size(18px, 14px, 46px, 14px, 46px);
     }
 
     &.large {
-        font-size: 26px;
-        padding: 23px 93px 23px 94px;
+        @include size(26px, 23px, 93px, 23px, 94px);
     }
 
     &.x-large {
-        font-size: 36px;
-        padding: 27px 102px 27px 103px;
+        @include size(36px, 27px, 102px, 27px, 103px);
     }
 
     &.round {
