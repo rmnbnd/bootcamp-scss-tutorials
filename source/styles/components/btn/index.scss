@@ -25,18 +25,15 @@
     }
 
     &.round {
-        &-3 {
-            border-radius: 3px;
+
+        $rounds: (3, 7, 12, 20);
+
+        @each $round in $rounds {
+            &-#{$round} {
+                border-radius: $round + px;
+            }
         }
-        &-7 {
-            border-radius: 7px;
-        }
-        &-12 {
-            border-radius: 12px;
-        }
-        &-20 {
-            border-radius: 20px;
-        }
+
     }
 
     &.bg-color {
